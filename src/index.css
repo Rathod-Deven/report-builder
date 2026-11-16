@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-slate-50 text-slate-800 antialiased; background-image: radial-gradient(1200px 500px at 90% -10%, rgba(27,138,143,.10), transparent 60%), radial-gradient(900px 400px at -10% 110%, rgba(15,42,71,.07), transparent 60%); background-attachment: fixed; }
+.input { @apply w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm shadow-sm outline-none transition placeholder:text-slate-400 hover:border-slate-300 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/15; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition duration-150 focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-500/30 active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50; }
+.btn-primary { @apply bg-gradient-to-b from-teal-500 to-teal-600 text-white shadow-[0_6px_16px_-6px_rgba(21,113,118,.6)] hover:brightness-110; }
+.btn-ghost { @apply border border-slate-200 bg-white text-slate-700 shadow-sm hover:border-slate-300 hover:bg-slate-50; }
+.btn-dark { @apply bg-gradient-to-b from-navy-700 to-navy-900 text-white shadow-[0_6px_16px_-6px_rgba(11,31,54,.6)] hover:brightness-125; }
+.card-shadow { box-shadow: 0 1px 2px rgba(15,42,71,.04), 0 12px 32px -16px rgba(15,42,71,.18); }
+::selection { background: rgba(27,138,143,.25); }
